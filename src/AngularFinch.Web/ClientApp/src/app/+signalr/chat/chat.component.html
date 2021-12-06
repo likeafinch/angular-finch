@@ -1,0 +1,33 @@
+<div class="left-signalr">
+    <h2 class="block-header">Chat example</h2>
+    <div class="chat-display">
+      <div class="message-header" *ngIf="messages.length > 0">
+        <div class="message-tag">
+          #
+        </div>
+        <div class="message-title">
+          Messages
+        </div>
+      </div>
+      <div class="popular-messages" *ngFor="let message of messages; let i = index">
+        <div class="message-tag">
+            {{i + 1}}
+        </div>
+        <div class="message-title">
+            {{message}}
+        </div>
+      </div>
+      <div *ngIf="messages.length <= 0">
+          <span class="sad-chat">~ No messages ~</span>
+        </div>
+    </div>
+    
+    <div class="chat-service">
+        <form class="form-inline message-form" (ngSubmit)="sendMessage()" #messageForm="ngForm">
+            <input type="text" class="form-control message-textarea" id="message" placeholder="your message..." name="message" [(ngModel)]="message" required>
+            <button type="submit" class="btn btn-primary send-chat" [disabled]="!messageForm.valid">Send</button>
+          </form>
+    </div>
+    
+    
+</div>

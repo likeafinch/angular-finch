@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  AngularFinch.web:
+    image: likeafinch/AngularFinch:latest
+    build:
+      context: .
+      dockerfile: src/AngularFinch.Web/Dockerfile

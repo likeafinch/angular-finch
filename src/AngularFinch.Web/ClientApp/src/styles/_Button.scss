@@ -1,0 +1,26 @@
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1vw;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    &:focus,
+    &:hover {
+        outline: 0;
+    }
+    &[disabled] {
+        cursor: default;
+        opacity: .5;
+    }
+}
+
+

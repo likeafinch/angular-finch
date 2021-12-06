@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import "../../../../styles/index.scss";
+* {
+    text-transform: capitalize;
+    font-family: 'Abel', sans-serif;
+}
+.form-container {
+    width: 33vw;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    top: 5vw;
+    padding: 0 1vw;
+    height: 100%;
+    background: #c0c8d1; 
+    color: #313b47;
+    text-align: right;
+    z-index: 1;
+}
+.form-container button {
+    color: #a68080;
+    background: #313b47;
+    border: none;
+    height: 4vw;
+    border: none;
+    font-size: 1.3vw;
+    line-height: 4vw;
+    width: 33vw;
+    text-align: center;
+    position: fixed;
+    padding:0;
+    bottom: 0;
+    right: 0;
+   
+    }
+.form-container button:hover {
+background: #a68080;
+color: #313b47;
+}
+
+.form-container input[type='text'],input[type='password'],input[type='email'],textarea {
+    border: none;
+    color: #313b47;
+    width: 31vw;
+    background:#fff;
+}
+
+.form-container h2 {
+    display: block;
+    width: 20vw;
+    border-bottom: solid .3vw #606c76;
+    color: #313b47;
+    float: right;
+}
+.asp-identity-info {
+width: 55vw;
+position: fixed;
+top: 5vw;
+left:0;
+padding-left: 1vw;
+padding-top:1vw;
+float: left;
+}
+h1.info {
+display: block;
+width: 35vw;
+color: #606c76;
+border-bottom: solid .3vw #313b47;
+}
+.asp-identity-info p {
+padding-bottom: 3vw;
+padding-top: 1vw;
+line-height: 2.7vw;
+}

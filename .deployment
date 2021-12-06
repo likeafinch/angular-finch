@@ -1,0 +1,2 @@
+[config]
+command = cmd.exe deploy.cmd

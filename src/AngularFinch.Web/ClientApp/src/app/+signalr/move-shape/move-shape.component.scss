@@ -1,0 +1,23 @@
+.draggable {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background:transparent;
+    cursor: pointer;
+  }
+  .left-signalr {
+    height: 100%;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: 1;
+    padding-top:6vw;
+    padding-left: 1vw;
+    width:40vw;  
+    background: #c0c8d1; 
+}
+.block-header {
+  display: block;
+  width: 25vw;
+  border-bottom: solid .3vw #313b47;
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import "../../../styles/index.scss";
+* {
+    text-transform: capitalize;
+    font-family: 'Abel', sans-serif;
+}
+.change-info {
+    width: 40vw;
+    position: fixed;
+    top: 5vw;
+    left: 0;
+    height: 100%;
+    background: #d1d1d1;;
+
+}
+.router-stuff input[type='text'],input[type='password'],input[type='email'],input[type='number'],textarea {
+    border: none;
+    background-color: #313b47;
+    color: #a68080;
+    height: 3vw;
+    line-height: 3vw;
+    margin:1vw;
+    width: 38vw;
+}
+.router-stuff label {
+    display: block;
+    font-size: 1.3vw;
+    margin-left: 1vw;
+    width: 15vw;
+    border-bottom: solid .2vw #a68080;
+    color: #313b47;
+}
+.router-stuff button {
+    background: #313b47;
+    color: #a68080;
+    height: 4vw;
+    width: 40vw;
+    line-height: 4vw;
+    border: none;
+    bottom: 0;
+    position: fixed;
+    font-size: 1.3vw;
+}
+.title-block {
+    width: 30vw;
+    margin: 1vw;
+    border-bottom: solid .3vw #a68080;
+    color: #313b47;
+}

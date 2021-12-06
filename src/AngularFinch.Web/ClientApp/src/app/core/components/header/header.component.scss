@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import "../../../../styles/index.scss";
+* {
+    text-transform: capitalize;
+    font-family: 'Abel', sans-serif;
+}
+.inner {
+    overflow: hidden;
+    background-color: #313b47;
+}
+
+.inner a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.15s ease;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+    letter-spacing: 0.075em;
+    color:#a68080;
+    height: 100%;
+    line-height: 5vw;
+    font-size: 1.3vw;
+    text-align: center;
+    width: 12vw;
+}
+.inner a:hover {
+    background: #a68080;
+    color:#313b47;
+}
+@media screen and (max-width:860px) {
+    .inner a {
+    height:100%;
+    line-height: 70px;
+    font-size:13px;
+    }
+}
+.navbar-toggler {
+    display:none;
+}
+.inverted-navbar {
+    display:none;
+}
+a.logo {
+    height: 100%;
+
+}
+@media screen and (max-width:680px) {
+    .inner a {
+        display: none;
+    }
+    button.navbar-toggler {
+        float:right;
+        display:block;
+        background: none;
+        border: none;
+    }
+    button.navbar-toggler:hover {
+        cursor: pointer;
+    }
+    .inverted-navbar.inverted-navbar.isNavbarCollapsed {
+        display: block;
+        float:right;
+    }
+}
+@media screen and (max-width:680px) {
+    .inverted-navbar.isNavbarCollapsed {
+        width: 50vw;
+        overflow-x: auto;
+        overflow-y: auto;
+        position: fixed;
+        right:0;
+    }
+    .navbar-toggler {
+        position: absolute;
+        right:0;
+        top:0;
+        height:100%;
+width: 60px;
+        margin: 0;
+        font-size: 8vw;
+        color: #a68080;
+        cursor: pointer;
+    }
+    .inverted-navbar.isNavbarCollapsed a {
+        float: right;
+        display: block;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+        font-size:18px;
+        background: #a68080;
+        color:#313b47;
+
+    }
+    .inverted-navbar.isNavbarCollapsed a:hover {
+        color:#a68080;
+        background: #313b47;
+    }
+}
+@media screen and (max-width:450px) {
+    .inverted-navbar.isNavbarCollapsed {
+        width: 100%;
+    }
+
+}
